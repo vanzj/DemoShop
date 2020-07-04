@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  demoshop:
+    image: ${DOCKER_REGISTRY-}demoshop
+    build:
+      context: .
+      dockerfile: DemoShop/Dockerfile
